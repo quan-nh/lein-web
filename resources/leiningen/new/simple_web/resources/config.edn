@@ -1,0 +1,3 @@
+{:www {:port 3000}
+
+ :db {:jdbc-url "jdbc:sqlite:db/dev.sqlite"}}
