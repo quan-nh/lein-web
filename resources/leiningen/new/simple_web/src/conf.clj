@@ -1,7 +1,7 @@
 (ns {{namespace}}.conf
   (:require [mount.core :refer [defstate]]
-            [clojure.java.io :as io]
-            [clojure.edn :as edn]))
+            [aero.core :refer [read-config]]
+            [clojure.java.io :as io]))
 
 (defstate config
-  :start (-> (io/resource "config.edn") slurp edn/read-string))
+  :start (read-config (io/resource "config.edn")))

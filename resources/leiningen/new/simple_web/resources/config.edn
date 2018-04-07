@@ -1,3 +1,5 @@
-{:www {:port 3000}
+{:www {:port #long #or [#env PORT 3000]}
 
- :db {:jdbc-url "jdbc:sqlite:db/dev.sqlite"}}
+ ; Configuration options https://github.com/tomekw/hikari-cp
+ :db
+ {:jdbc-url "jdbc:sqlite:db/dev.sqlite"}}

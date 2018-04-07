@@ -8,6 +8,8 @@
                  [ring/ring-core "1.6.3"]
                  [ring/ring-jetty-adapter "1.6.3"]
                  [compojure "1.6.0"]
+                 ;; config
+                 [aero "1.1.3"]
                  ;; db
                  [org.clojure/java.jdbc "0.7.5"]
                  [org.xerial/sqlite-jdbc "3.21.0.1"]
