@@ -24,6 +24,7 @@
              ["dev/user.clj" (render "dev/user.clj")]
              ["resources/config.edn"  (render "resources/config.edn")]
              ["resources/logback.xml" (render "resources/logback.xml")]
+             "resources/sql"
              "resources/public"
              ["src/{{dirs}}/conf.clj" (render "src/conf.clj" data)]
              ["src/{{dirs}}/db.clj"   (render "src/db.clj" data)]
