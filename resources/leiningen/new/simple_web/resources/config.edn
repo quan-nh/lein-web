@@ -1,4 +1,4 @@
-{:www {:port #long #or [#env PORT 3000]}
+{:www {:port 3000}
 
  ; Configuration options https://github.com/tomekw/hikari-cp
  :db
