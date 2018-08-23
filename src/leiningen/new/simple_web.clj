@@ -28,6 +28,6 @@
              ["src/{{dirs}}/db.clj"   (render "src/db.clj" data)]
              ["src/{{dirs}}/main.clj" (render "src/main.clj" data)]
              ["src/{{dirs}}/www.clj"  (render "src/www.clj" data)]
+             ["src/{{dirs}}/handler/foo.clj"  (render "src/handler/foo.clj" data)]
              "src/{{dirs}}/db"
-             "src/{{dirs}}/handler"
              "db" "sql")))

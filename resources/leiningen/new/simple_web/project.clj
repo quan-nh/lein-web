@@ -22,6 +22,7 @@
   {:dev {:source-paths ["dev"]
          :dependencies [[javax.servlet/servlet-api "2.5"]
                         [org.clojure/tools.namespace "0.2.11"]
-                        [tolitius/mount-up "0.1.1"]]
+                        [tolitius/mount-up "0.1.1"]
+                        [orchestra "2018.08.19-1"]]
          :repl-options {:init-ns user}}
    :uberjar {:aot :all}})

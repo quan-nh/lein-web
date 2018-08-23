@@ -4,6 +4,7 @@
   (:require [clojure.tools.namespace.repl :as tn]
             [mount.core :as mount]
             [mount-up.core :as mu]
+            [orchestra.spec.test :as st]
             {{namespace}}.www))
 
 (defn start []
@@ -30,6 +31,7 @@
   "stops all states defined by defstate, reloads modified source files, and restarts the states"
   []
   (stop)
-  (tn/refresh :after 'dev/go))
+  (tn/refresh :after 'dev/go)
+  (st/instrument))
 
 (mu/on-upndown :info mu/log :before)
