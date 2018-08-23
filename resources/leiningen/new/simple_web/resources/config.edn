@@ -2,4 +2,4 @@
 
  ; Configuration options https://github.com/tomekw/hikari-cp
  :db
- {:jdbc-url "jdbc:sqlite:db/dev.sqlite"}}
+ {:jdbc-url "jdbc:sqlite:db.sqlite"}}

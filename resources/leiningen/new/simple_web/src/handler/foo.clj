@@ -1,8 +1,10 @@
 (ns {{namespace}}.handler.foo
-  (:require [clojure.spec.alpha :as s]))
+  (:require [clojure.spec.alpha :as s]
+            [ring.util.http-response :refer :all]
+            [{{namespace}}.db.bar :refer [find-bar]]))
 
 (s/fdef bar
         :args (s/cat :id int?)
-        :ret string?)
+        :ret map?)
 
-(defn bar [id] (str "greeting " id))
+(defn bar [id] (ok (find-bar id)))

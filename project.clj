@@ -1,4 +1,4 @@
-(defproject simple-web/lein-template "1.2.0"
+(defproject simple-web/lein-template "1.3.0"
   :description "Web project template for Leiningen"
   :url "https://github.com/tentamen/lein-web"
   :eval-in-leiningen true

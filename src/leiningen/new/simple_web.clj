@@ -29,5 +29,5 @@
              ["src/{{dirs}}/main.clj" (render "src/main.clj" data)]
              ["src/{{dirs}}/www.clj"  (render "src/www.clj" data)]
              ["src/{{dirs}}/handler/foo.clj"  (render "src/handler/foo.clj" data)]
-             "src/{{dirs}}/db"
-             "db" "sql")))
+             ["src/{{dirs}}/db/bar.clj"  (render "src/db/bar.clj" data)]
+             "sql")))

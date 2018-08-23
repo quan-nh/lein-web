@@ -8,6 +8,8 @@
                  [ring/ring-core "1.6.3"]
                  [ring/ring-jetty-adapter "1.6.3"]
                  [compojure "1.6.1"]
+                 [metosin/muuntaja "0.6.0-alpha3"]
+                 [metosin/ring-http-response "0.9.0"]
                  ;; config
                  [aero "1.1.3"]
                  ;; db
