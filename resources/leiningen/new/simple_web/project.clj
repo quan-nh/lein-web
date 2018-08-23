@@ -3,19 +3,19 @@
   :url "http://example.com/FIXME"
   :min-lein-version "2.0.0"
   :dependencies [[org.clojure/clojure "1.9.0"]
-                 [mount "0.1.12"]
+                 [mount "0.1.13"]
                  ;; web
                  [ring/ring-core "1.6.3"]
                  [ring/ring-jetty-adapter "1.6.3"]
-                 [compojure "1.6.0"]
+                 [compojure "1.6.1"]
                  ;; config
                  [aero "1.1.3"]
                  ;; db
-                 [org.clojure/java.jdbc "0.7.5"]
-                 [org.xerial/sqlite-jdbc "3.21.0.1"]
-                 [hikari-cp "2.3.0"]
+                 [org.clojure/java.jdbc "0.7.8"]
+                 [org.xerial/sqlite-jdbc "3.23.1"]
+                 [hikari-cp "2.6.0"]
                  ;; logging
-                 [org.clojure/tools.logging "0.4.0"]
+                 [org.clojure/tools.logging "0.4.1"]
                  [ch.qos.logback/logback-classic "1.2.3"]]
   :main ^:skip-aot {{namespace}}.main
   :profiles
