@@ -16,7 +16,6 @@
                  [org.clojure/java.jdbc "0.7.8"]
                  [com.h2database/h2 "1.4.197"]
                  [hikari-cp "2.6.0"]
-                 [ragtime "0.7.2"]
                  ;; logging
                  [org.clojure/tools.logging "0.4.1"]
                  [ch.qos.logback/logback-classic "1.2.3"]]
@@ -26,6 +25,7 @@
          :dependencies [[javax.servlet/servlet-api "2.5"]
                         [org.clojure/tools.namespace "0.2.11"]
                         [tolitius/mount-up "0.1.1"]
+                        [ragtime "0.7.2"]
                         [orchestra "2018.08.19-1"]]
          :repl-options {:init-ns user}}
    :uberjar {:aot :all}}
