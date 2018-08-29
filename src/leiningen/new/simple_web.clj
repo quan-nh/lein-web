@@ -23,11 +23,12 @@
              ["dev/user.clj" (render "dev/user.clj")]
              ["resources/config.edn"  (render "resources/config.edn")]
              ["resources/logback.xml" (render "resources/logback.xml")]
+             ["resources/migrations/001-foo.up.sql"  (render "resources/migrations/001-foo.up.sql")]
+             ["resources/migrations/001-foo.down.sql" (render "resources/migrations/001-foo.down.sql")]
              "resources/public"
              ["src/{{dirs}}/conf.clj" (render "src/conf.clj" data)]
              ["src/{{dirs}}/db.clj"   (render "src/db.clj" data)]
              ["src/{{dirs}}/main.clj" (render "src/main.clj" data)]
              ["src/{{dirs}}/www.clj"  (render "src/www.clj" data)]
              ["src/{{dirs}}/handler/foo.clj"  (render "src/handler/foo.clj" data)]
-             ["src/{{dirs}}/db/bar.clj"  (render "src/db/bar.clj" data)]
-             "sql")))
+             ["src/{{dirs}}/db/foo.clj"  (render "src/db/foo.clj" data)])))

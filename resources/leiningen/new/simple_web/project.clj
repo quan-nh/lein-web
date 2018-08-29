@@ -14,8 +14,9 @@
                  [aero "1.1.3"]
                  ;; db
                  [org.clojure/java.jdbc "0.7.8"]
-                 [org.xerial/sqlite-jdbc "3.23.1"]
+                 [com.h2database/h2 "1.4.197"]
                  [hikari-cp "2.6.0"]
+                 [ragtime "0.7.2"]
                  ;; logging
                  [org.clojure/tools.logging "0.4.1"]
                  [ch.qos.logback/logback-classic "1.2.3"]]
@@ -27,4 +28,6 @@
                         [tolitius/mount-up "0.1.1"]
                         [orchestra "2018.08.19-1"]]
          :repl-options {:init-ns user}}
-   :uberjar {:aot :all}})
+   :uberjar {:aot :all}}
+  :aliases {"migrate"  ["run" "-m" "user/migrate"]
+            "rollback" ["run" "-m" "user/rollback"]})
