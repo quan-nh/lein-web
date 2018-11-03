@@ -1,5 +1,7 @@
 # lein-web
 
+[![Clojars Project](https://img.shields.io/clojars/v/simple-web/lein-template.svg)](https://clojars.org/simple-web/lein-template)
+
 A Leiningen template for projects using [Compojure][1], [Mount][2].
 
 [1]: http://compojure.org
