@@ -3,12 +3,12 @@
   :url "http://example.com/FIXME"
   :min-lein-version "2.0.0"
   :dependencies [[org.clojure/clojure "1.9.0"]
-                 [mount "0.1.13"]
+                 [mount "0.1.14"]
                  ;; web
-                 [ring/ring-core "1.6.3"]
-                 [ring/ring-jetty-adapter "1.6.3"]
+                 [ring/ring-core "1.7.1"]
+                 [ring/ring-jetty-adapter "1.7.1"]
                  [compojure "1.6.1"]
-                 [metosin/muuntaja "0.6.0-alpha3"]
+                 [metosin/muuntaja "0.6.1"]
                  [metosin/ring-http-response "0.9.0"]
                  ;; config
                  [aero "1.1.3"]
@@ -24,9 +24,9 @@
   {:dev {:source-paths ["dev"]
          :dependencies [[javax.servlet/servlet-api "2.5"]
                         [org.clojure/tools.namespace "0.2.11"]
-                        [tolitius/mount-up "0.1.1"]
+                        [tolitius/mount-up "0.1.2"]
                         [ragtime "0.7.2"]
-                        [orchestra "2018.08.19-1"]]
+                        [orchestra "2018.09.10-1"]]
          :repl-options {:init-ns user}}
    :uberjar {:aot :all}}
   :aliases {"migrate"  ["run" "-m" "user/migrate"]
