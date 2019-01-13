@@ -1,7 +1,7 @@
 (ns {{namespace}}.www
   (:require [mount.core :refer [defstate]]
             [{{namespace}}.conf :refer [config]]
-            [{{namespace}}.handler.foo :as foo]
+            [{{namespace}}.handler.foo :as foo-handler]
             [compojure.core :refer :all]
             [compojure.coercions :refer :all]
             [compojure.route :as route]
@@ -10,7 +10,8 @@
 
 (defroutes app-routes
   (GET "/" [] "Hello World")
-  (GET "/foo/:id" [id :<< as-int] (foo/bar id))
+  (GET "/req" req (str req))
+  (GET "/foo/:id" [id :<< as-int] (foo-handler/bar id))
   (route/not-found "Not Found"))
 
 (defstate app

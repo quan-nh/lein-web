@@ -16,6 +16,11 @@ To start a web server for the application, run:
     (dev)(go)
     (reset)
 
+## Db Migrations
+
+    lein migrate
+    lein rollback
+
 ## License
 
 Copyright © {{year}} FIXME
